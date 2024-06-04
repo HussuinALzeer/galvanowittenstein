@@ -1,0 +1,91 @@
+
+
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+
+.counter{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: #505050;
+    padding: 2rem 4rem;
+    font-size: 10vw;
+    font-family: "Saol Display";
+    font-weight: lighter;
+    font-style: italic;
+    z-index: 1000;
+}
+
+.site_teaser span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2rem 4rem;
+    color: #505050;
+    font-size: 1rem;
+    font-family: "Saol Display";
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.circles{
+    position: absolute;
+    left: 5rem;
+    bottom: 5rem;
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+}
+
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: 1px solid #505050;
+    border-radius: 50%;
+}
+
+.circleInner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 400px;
+}
+
+.circleInnerRotator{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    width: 162.5px;
+    height: 162.5px;
+    background: none;
+    border: 1px solid #505050;
+    border-radius: 100%;
+
+}
+
+.block{
+    position: absolute;
+    top: -100px;
+    left: 200px;
+    width: 0;
+    height: 0;
+    display: none;
+    background: none;
+    border: 1px solid #505050;
+    transform-origin: bottom;
+}

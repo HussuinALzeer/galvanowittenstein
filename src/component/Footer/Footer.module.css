@@ -1,0 +1,336 @@
+.container{
+    background-color: #eee;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+.Into{
+    width: 100%;
+    text-align: left;
+
+}
+
+.title{
+    font-size: 3em;
+    font-weight: 500;
+}
+
+.secondText{
+    font-size: 1.85rem;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+
+.formContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    cursor: pointer;
+}
+
+.icon{
+    position: relative;
+    min-width: 60px;
+    height: 60px;
+    background: repeating-conic-gradient(from 27.5deg, #800000 0%, #800000 10%, transparent 10% , transparent 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-conic-gradient(from 117.5deg, #800000 0%, #800000 10%, transparent 10% , transparent 50%);
+
+}
+
+.icon::after{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background-color: #eee;
+}
+
+.icon b{
+    position: absolute;
+    inset: 8px;
+    background-color: #800000;
+    z-index: 2;
+}
+
+.icon .img{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    z-index: 1000;
+    background-color: #800000;
+}
+
+.textt {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+.textt h3:nth-child(1){
+    font-weight: 600;
+    color: #800000;
+}
+
+.txt{
+    margin-top: 50px;
+    font-weight: 500;
+    border-left: 10px solid #800000;
+    padding-left: 10px;
+    left: 1em;
+    background: #fffcfc;
+    width: 220px;
+}
+
+.sci{
+    position: relative;
+    display: flex;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.sci li {
+    list-style: none;
+    display: flex;
+    
+
+}
+
+.sci li a {
+    font-size: 1.5em;
+    transition: 0.25s;
+}
+
+.sci li a:hover{
+    color: #800000;
+    filter: drop-shadow( 0 0 5px #800000);
+}
+
+
+.sci .sciIcon{
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+
+
+
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    position: relative;
+    background: repeating-conic-gradient(from var(--a),#800000 0%, #800000 10%, transparent 10%, transparent 50%);
+    animation: animate 6s linear infinite;
+    padding: 40px ;
+    
+}
+
+.contactForm::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-conic-gradient(from var(--a),#800000 0%, #800000 10%, transparent 10%, transparent 50%);
+    animation: animate 6s linear infinite;
+    animation-delay: -2s;
+}
+
+.contactForm::after{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    border: 10px solid #eee;
+    background-color: #444444;
+}
+
+@property --a {
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+
+@keyframes animate {
+    
+    0%{
+        --a: 0deg
+    }
+
+    100%{
+        --a:360deg
+    }
+}
+
+
+.contactForm form{
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    padding: 0px 40px;
+}
+
+.contactForm form h2{
+    font-size: 2em;
+    color: white;
+    font-weight: 500;
+}
+
+.inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.input , .textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 1.1em;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #800000;
+    color: #fff;
+    outline: none;
+    margin: 12px 0;
+}
+
+.inputBox span{
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    padding: 5px 0;
+    margin: 10px 0;
+    color: #fff;
+    font-size: 1.1em;
+    transition: 0.5s;
+}
+
+
+.input:focus ~ span , .textarea:focus ~ span {
+    color: #a4a3a3;
+    font-size: 0.9em;
+    transform: translateY(-24px);
+}
+
+.input:valid ~ span , .textarea:valid ~ span {
+    color: #a4a3a3;
+    font-size: 0.9em;
+    transform: translateY(-24px);
+}
+
+.input[type="email"]:invalid ~ span {
+    color: #a4a3a3;
+    font-size: 0.9em;
+    transform: translateY(-24px);
+}
+
+.btnBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btn{
+    background-color: #800000;
+    padding: 10px 40px;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+
+
+@media (max-width:420px) {
+    
+    .formContainer{
+        flex-direction: column;
+    }
+
+    .container{
+        padding: 20px;
+    }
+
+    .contactForm ,.contactInfo{
+        width: 100%;
+    }
+
+    .contactForm{
+        padding: 0;
+        
+    }
+
+    .contactForm form{
+        padding: 30px !important;
+    }
+
+    .inputBox{
+        position: relative;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    
+.inputBox span{
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    padding: 10px 0;
+    margin: 10px 0;
+    color: white;
+    font-size: 0.8em;
+    transition: 0.5s;
+}
+
+.contactForm h2 {
+    font-size: 1rem !important;
+}
+
+.sci  {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+}
+}

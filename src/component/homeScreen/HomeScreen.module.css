@@ -1,0 +1,253 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    /* background-color: bisque; */
+    margin-top: 3000px !important;
+
+}
+
+
+.content{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(177, 118, 116, 0.55);
+    z-index: 2;
+}
+
+.image{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    filter: saturate(70%) blur(0.25px) brightness(70%);
+    object-fit: cover;
+}
+
+.details{
+    z-index: 4000 !important ;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+
+}
+
+.left{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    padding: 0 0px 0 80px;
+    font-family: 'Sans Display';
+
+}
+
+.title{
+    letter-spacing: 3px;
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-top: 120px;
+}
+
+
+.material{
+    letter-spacing: 5px;
+    font-size: 5rem;
+    margin:70px  40px;    
+}
+
+.text{
+    line-height: 0;
+}
+
+.since{
+    letter-spacing: 3px;
+    margin: 20px;
+}
+
+.logo{
+    width: 400px;
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 20px 36px -4px rgba(0,0,0,0.4);
+
+}
+
+/* .btn{
+    position: absolute;
+    bottom: 0;
+    right: 45%;
+    
+    text-align: left;
+    margin-left: 30%;
+    margin-bottom: 40px;
+    background-color: #fff;
+    color: #820404;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 20px 36px -4px rgba(0,0,0,0.6);
+    cursor: pointer;
+
+}
+
+.btn:hover{
+} */
+
+
+
+.right{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.floatingCard{
+    width: 450px;
+    height: 450px;
+    background: radial-gradient(circle, rgba(130,4,4,1) 0%, rgba(251,141,141,1) 100%);
+    border-radius: 63% 34% 71% 28% / 51% 45% 42% 45%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+    z-index: 10;
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.4)
+    ;
+}
+
+.man{
+    z-index: 1000;
+    height: 600px;
+    width: 550px;
+    margin-top: 150px;
+}
+
+.tool1{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%,-30%) rotate(-50deg);
+z-index: 9;
+}
+
+.tool2{
+    position: absolute;
+    top: 70%;
+    left: 78%;
+    transform: translate(-50%,-30%) rotate(-30deg);
+    z-index: 9;
+}
+.tool3{
+    position: absolute;
+    top: 35%;
+    left: 27%;
+    transform: translate(-50%,-30%) rotate(-15deg);
+    z-index: 9;
+}
+
+.tool4{
+    position: absolute;
+    top: 45%;
+    left: 80%;
+    transform: translate(-50%,-30%) rotate(0deg);
+    z-index: 9;
+}
+@media (max-width:420px) {
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4600px !important;
+        height: 90vh;
+        width: 100%;
+        text-align: center !important;
+    }
+
+    .floatingCard{
+        display: none;
+    }
+
+    .details{
+        display: flex;
+        /* background-color: rgb(101, 100, 100); */
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    /* .text{
+        font-size: 0.8rem;
+    } */
+
+    .right{
+        display: none;
+    } 
+    .left{
+        width: 100% !important;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: #820404; */
+        padding: 0 0px 0 00px;
+    }
+
+    .logo{
+        width: 200px;
+        height: 80px !important;
+        margin-top: 20px;
+    }
+    .title{
+        letter-spacing: 3px;
+        font-size: 1em;
+        font-weight: 500;
+        margin-left: 00px;
+        margin-top: 0px;
+    }
+
+    .material{
+        letter-spacing: 5px;
+        font-size: 2rem;
+        margin:70px 0 70px 50px !important;    
+    }
+
+    .since{
+        letter-spacing: 3px;
+        margin: 20px;
+        font-size: 1.5em;
+    }
+}
